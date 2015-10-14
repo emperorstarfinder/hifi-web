@@ -8,7 +8,6 @@ var home = {
     processedDevices: [],
 
     init: function() {
-        smoothScroll.init();
         $('#placenames select').bind('change', home.refreshRequirements).chosen({disable_search_threshold: 100});
         window.addEventListener('resize', function() {
             $('#placenames select').chosen('destroy').chosen({disable_search_threshold: 100});
@@ -42,7 +41,7 @@ var home = {
             $('#placenames').addClass('expanded');
         });
 
-        $('#owl-carousel a[href^="hifi://"]').bind('click', function(event) {
+        $('#placenames ul > li > a[href^="hifi://"]').bind('click', function(event) {
             event.preventDefault();
             var options = {
                 img: $('img', this).attr('src'),
@@ -60,27 +59,9 @@ var home = {
                     $(document).scrollTop($('#placenames form').offset().top);
                     return false;
                 });
-            });
+            });            
             return false;
         });
-
-        $('#email-signup')
-            .on('focus', function () {
-                this.placeholder = 'email address';
-            })
-            .on('blur', function () {
-                this.placeholder = 'Subscribe to us';
-            });
-
-        $("#owl-carousel").owlCarousel({
-            items: 3.2,
-            itemsDesktop : [1199, 3],
-            itemsDesktopSmall : [991, 2.7],
-            itemsTablet : [768, 1.4],
-            itemsTabletSmall : false,
-            itemsMobile : [479, 1.3],
-        });
-
     },
 
     refreshRequirements: function() {
@@ -91,7 +72,7 @@ var home = {
                 value.match(/pkg/i)
                     ? ' requires Mountain Lion (10.8) or newer'
                     : (
-                        (value.match(/exe/i))
+                        (value.match(/exe/i)) 
                             ? ' requires Windows 7 or newer'
                             : ''
                     )
