@@ -13,8 +13,6 @@ $tweetStrJob2 = urlencode('@highfidelityinc is building a new virtual world and 
   <a href="#devops-engineer"><span data-hover="DevOps Engineer">DevOps Engineer</span></a>
   <a href="#technical-program-manager"><span data-hover="Technical Program Manager">Technical Program Manager</span></a>
   <a href="#technical-writer"><span data-hover="Technical Writer">Technical Writer</span></a>
-  <br />
-  <a href="#raconteur"><span data-hover="Raconteur">Raconteur</span></a>
 </nav>
 
 <div role="main" id="main">
@@ -627,39 +625,7 @@ $tweetStrJob2 = urlencode('@highfidelityinc is building a new virtual world and 
     can login to Hifi. Then, take a look at <a href="https://worklist.net">Worklist</a> and see if there's a job you can do
     to show us your work skills.</p>
   </article>
-  <article class="no-border-bottom radius-border-top">
-    <h2>Contract</h2>
-    <p class="lead"><a name="raconteur">Raconteur</a></p>
-      <p>
-      High Fidelity seeks a master storyteller with a broad command of social media tools to engage customers and
-      recruits.
-      <br/><br/>
-      You have worked in a consumer-facing tech company producing marketing assets across multiple media.
-      <br/><br/>
-      You communicate your company's ideas in powerful, interesting ways. This includes fresh and frequent short-form
-      copy for websites, blogs and social media campaigns. 
-      <br/><br/>
-      You produce polished video shorts and webinars, and can coordinate events and convention activities.
-      <br/><br/>
-      You have a flare for language, an eye for detail, and like to work hard to show rather than tell.
-      <br/><br/>
-      You are self-directed, data driven, and game for working in a fluid startup environment.
-      <br/><br/>
-      You're comfortable helping to define and revise a continually-shifting set of messages as your company evolves.
-      <br/><br/>
-      Interested applicants should be sure to include writing samples, social media account management examples,
-      multimedia examples, and references. 
-      </p>
-    <p>
-      <a href="mailto:hiring@highfidelity.io">hiring@highfidelity.io</a>
-    </p>
-    <a class="tweetthis" target="_blank"
-      href="http://twitter.com/home/?status=<?php echo $tweetStrJob2; ?>">
-      <i class="icon-twitter"></i>
-      <span>Tweet this job</span>
-    </a>
-  </article>
-  <article class="line-border-top radius-border-bottom">
+  <article class="radius-border-top radius-border-bottom">
     <p>
       Our distributed development system, 
       <a href="<?php echo WORKLIST_URL; ?>">Worklist</a>, is ready
