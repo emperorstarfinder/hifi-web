@@ -37,6 +37,9 @@ if (class_exists('View')) {
                     <a href="<?php echo $base_path; ?>market" title="Market">Market</a><i></i>
                 </li>
                 <li>
+                    <a href="https://blog.highfidelity.com/blog" title="Blog">Blog</a><i></i>
+                </li>
+                <li>
                     <a href="https://github.com/highfidelity" title="Code">Code</a><i></i>
                 </li>
                 <li>
