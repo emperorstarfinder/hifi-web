@@ -3,11 +3,11 @@ $docs_url = 'http://docs.highfidelity.com';
 $download_url = 'https://highfidelity.com/download';
 if (class_exists('View')) {
     $page = View::read('page');
-    $base_path = './';
+    $base_path = 'https://highfidelity.com/';
     $worklist_url = WORKLIST_URL;
 } else {
     $page = 'blog';
-    $base_path = site_url('/') . '../';
+    $base_path = 'https://highfidelity.com/';
     $worklist_url = 'https://worklist.net/';
 }
 ?>
@@ -28,30 +28,42 @@ if (class_exists('View')) {
                     <a class="logo" href="<?php echo $base_path; ?>" title="High Fidelity"></a><i></i>
                 </li>
                 <li>
+                    <a href="<?php echo $base_path; ?>directory" title="Directory">Directory</a><i></i>
+                </li>
+                <li>
                     <a href="<?php echo $download_url; ?>" title="Download">Download</a><i></i>
                 </li>
-                <li class="<?php echo ($page == 'code' ? 'selected' : ''); ?>">
-                    <a href="<?php echo $base_path; ?>code" title="Code">Code</a><i></i>
+                <li>
+                    <a href="<?php echo $base_path; ?>market" title="Market">Market</a><i></i>
+                </li>
+                <li>
+                    <a href="https://blog.highfidelity.com/blog" title="Blog">Blog</a><i></i>
+                </li>
+                <li>
+                    <a href="https://github.com/highfidelity" title="Code">Code</a><i></i>
                 </li>
                 <li>
                     <a href="<?php echo $docs_url; ?>" title="Docs">Docs</a><i></i>
                 </li>
-                <li class="<?php echo ($page == 'creating' ? 'selected' : ''); ?>">
-                    <a href="<?php echo $base_path; ?>creating" title="Creating">Creating</a><i></i>
-                </li>
-                <li class="<?php echo ($page == 'press' ? 'selected' : ''); ?>">
-                    <a href="<?php echo $base_path; ?>press" title="Press">Press</a><i></i>
-                </li>
-            </ul>
-            <ul class="nav navbar-nav ">
                 <li>
-                    <a href="<?php echo $worklist_url; ?>" title="The Worklist">Worklist</a><i></i>
+                    <a href="https://worklist.net" title="Worklist">Worklist</a><i></i>
                 </li>
-                <li class="<?php echo ($page == 'jobs' ? 'selected' : ''); ?>">
-                    <a href="<?php echo $base_path; ?>jobs" title="Jobs">Jobs</a><i></i>
-                </li>
-                <li class="<?php echo ($page == 'blog' ? 'selected' : ''); ?>">
-                    <a href="<?php echo $base_path; ?>blog/" title="Blog">Blog</a>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Company <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li>
+                        <a href="<?php echo $base_url; ?>jobs" title="Jobs">Jobs</a><i></i>
+                    </li>
+                    <li>
+                        <a href="<?php echo $base_url; ?>press" title="Press">Press</a><i></i>
+                    </li>
+                    <li>
+                        <a href="<?php echo $base_url; ?>team" title="Team">Team</a><i></i>
+                    </li>
+                    <li>
+                        <a href="mailto:contact@highfidelity.com" title="Contact">Contact</a><i></i>
+                    </li>
+                  </ul>
                 </li>
             </ul>
         </nav>
@@ -60,4 +72,3 @@ if (class_exists('View')) {
 <?php if ($page != 'home' && $page != 'names') { ?>
     <div id="container">
 <?php } ?>
-
