@@ -48,7 +48,7 @@ if (class_exists('View')) {
                 <li>
                     <a href="https://worklist.net" title="Worklist">Worklist</a><i></i>
                 </li>
-                <li class="dropdown">
+                <!-- <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Company <span class="caret"></span></a>
                   <ul class="dropdown-menu">
                     <li>
@@ -64,7 +64,7 @@ if (class_exists('View')) {
                         <a href="mailto:contact@highfidelity.com" title="Contact">Contact</a><i></i>
                     </li>
                   </ul>
-                </li>
+                </li> -->
             </ul>
         </nav>
     </div>
